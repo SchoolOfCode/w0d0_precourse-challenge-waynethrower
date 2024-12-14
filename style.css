@@ -1,0 +1,132 @@
+#main{
+  display: block;
+  margin: 10px 5px 10px 5px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px 5px 5px 5px;
+  background: #80BDE3;
+}
+
+#top-div {
+  float: left;
+  width: 99%;
+  height: auto;
+  margin: 0px;
+  border: 5px solid #c3c3c3;
+  text-align: center;
+  font-size: 4rem;
+  background: white;
+}
+
+#flag {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 15px;
+}
+
+#title {
+  margin: 0px 3px 0px 10px;
+  text-shadow: 4px 2px #FFB81C;
+}
+
+#sub-title {
+  font-size: 2rem;
+  margin: 0px;
+  padding: 1px;
+  color: black;
+  text-shadow: 2px 2px 2px #009B3A;
+}
+
+#img-div {
+  float: left;/*must have for column float otherwise the height of this container does not auto correctly*/
+  width: 99%;
+  height: auto;
+  margin: 15px 0px 15px 0px;
+  border: 5px solid #c3c3c3;
+  background: white;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+#Hotel-header {
+  margin: 5px;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+#image {
+  border: solid 2px;
+  width: 98%;
+  height: auto;
+  margin: 3px;
+}
+
+#image2 {
+  border: solid 2px;
+  width: 98%;
+  height: auto;
+  margin: 3px;
+}
+
+#image3 {
+  border: solid 2px;
+  width: 100%;
+  height: auto;
+  margin: 3px;
+}
+
+#tribute-info {
+  clear: left;//needed because of the float CSS above
+  width: 99%;
+  height: auto;
+  margin: 15px 0px 15px 0px;
+  border: 5px solid #c3c3c3;
+  padding: 10px;
+  background: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+ol {
+  max-width: 80%;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.6;
+
+li {
+    counter-increment: item;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    text-indent: -1.2rem;
+    &::before {
+      content: counter(item) '.';
+      display: inline-block;
+      font-weight: bold;
+      padding-right: .5rem;      
+      text-align: right;
+      width: 1.5rem;
+    }
+  }
+}
+
+p {
+  font-weight: normal;
+}
+
+#tribute-p {
+  max-width: 80%;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#tribute-link {
+  font-weight: bold;
+  color: green;
+}
